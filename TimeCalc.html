@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <!--Required Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--To prevent much fustration make sure the file path is correct BootStrap+CSS-->
+    <!--Note that the BootStrap folder is in the same directory as the files-->
+    <link rel="stylesheet" href="BootStrap4.1/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="BootStrap4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="TimeCalc.css">
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    
+    <title>Time Calculator</title>
+</head>
+    
+    <body class="background">
+    
+        <br>
+        
+        <!--Banner-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 Banner">
+                 <h1>Time Calculator</h1>
+                </div>
+            </div>
+        </div>
+        
+        <br><br>
+        <!--Time Entry Start-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 se">
+                    <header>Start Time</header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 TimeEntry">
+                   <ul class="enter" id='timeEntry'>
+                    <li><input type='text' class="in" id="startHour"></li>
+                    <li class="colon">:</li>
+                    <li><input type='text' class="in" id="startMin"></li>
+                   </ul>
+                    
+                    <div class="am-pm" >
+                    <button class='btn start' type='button' onclick='select(this.id); amOrpm(this.id)'  id="sam">A.M</button>
+                    <button class='btn start' type='button' onclick='select(this.id); amOrpm(this.id)' id="spm">P.M</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <!--Time Entry End-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 se">
+                    <header>End Time</header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 TimeEntry">
+                      
+                   <ul class="enter" id="timeEntry">
+                    <li><input type='text' class="in" id="endHour"></li>
+                    <li class="colon">:</li>
+                    <li><input type="text" class="in" id="endMin"></li>
+                   </ul>
+                    
+                    <div class="am-pm btn-group-toggle" data-toggle='buttons' id="B">
+                    <button class='btn end' id="eam" onclick='select(this.id); amOrpm(this.id)'>A.M</button>
+                    <button class='btn end' id="epm" onclick='select(this.id); amOrpm(this.id)'>P.M</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br><br>
+        
+        <!--Button-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <diV class="calButton">
+                       <button class='btn' id="calculate" onclick="calc()">Calculate</button>
+                    </diV>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        
+        <!--Result-->
+        <div class="container Result">
+            <div>
+                <p id='Duration'>Duration:</p>
+            </div>
+        </div>
+         <script type=text/javascript src="time.js"></script>
+    </body>
+</html>
