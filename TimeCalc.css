@@ -1,0 +1,130 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+.background{
+    background-color: skyblue;
+}
+[class*="col-"]{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+/*Banner*/
+
+div.Banner h1{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center
+}
+/*Banner end*/
+
+/*Time Entry*/
+div.TimeEntry{
+    display: block;
+    align-content: center;
+    text-align: center;
+  
+}
+div ul.enter{
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 1rem;
+
+}
+div ul.enter li{
+    display: inline-block;
+    align-content: center;
+}
+div.se header{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 35px;
+    margin: 1px;
+}
+input.in{
+    width:4rem;
+    height: 3rem;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+li.colon{
+    height: 3rem;
+    width: .7rem;
+    font-weight: 900;
+    text-align: center;
+    font-size:30px;
+    
+}
+div.am-pm button{
+    width: 6rem;
+    height: 2.75em;
+    font-family: "Press Start 2P", cursive;
+    background-color: darkblue;
+    color: white;
+    border-radius: 20%;
+    border-color: aliceblue;
+}
+input:invalid{
+    background-color: red;
+}
+/*
+.btn:hover{
+    background-color: seagreen;
+}
+.btn:focus{
+    background-color: seagreen;
+}
+*/
+/*TimeEntry end*/
+
+/*Calculate*/
+div.calButton button{
+    width: 20rem;
+    height: 3rem;
+    font-family: "Press Start 2P", cursive;
+    border-radius: 20%;
+    border-style: none;
+}
+div.calButton{
+    text-align: center;
+}
+/*Calculate end*/
+/*Result*/
+div.Result p{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+/*Result end*/
+
+/*Mobile View*/
+@media screen and (max-width:375px){
+    /*Banner*/
+    div.Banner h1{
+        font-size: 20px;
+    }
+    /*Time Entry*/
+    div.se header{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width:430px){
+    /*Banner*/
+     div.Banner h1{
+        font-size: 30px;
+    }
+    /*Time Entry*/
+    div.se header{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:576px){
+    /*Good*/
+}
+@media screen and (max-width:767px){
+    /*Good*/
+}
+
